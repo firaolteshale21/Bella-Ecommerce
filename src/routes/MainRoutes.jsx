@@ -8,14 +8,16 @@ export const MainRoutes = () => {
   return (
     <div>
       <LoadingProgress />
-      <div className="bg-[#f4efe9] min-h-screen">
+      <div className="bg-[#f4efe9] min-h-screen max-w-screen overflow-x-hidden">
         <Suspense fallback={<div>Loading...</div>}>
           <Header />
-          <Routes>
-            <Route path="*" element={<Home />} />
-            <Route path="/store" element={<Store />} />
-            <Route path="/detail" element={<ProductDetail />} />
-          </Routes>
+          <div className="mt-32">
+            <Routes>
+              <Route path="*" element={<Home />} />
+              <Route path="/store" element={<Store />} />
+              <Route path="/detail" element={<ProductDetail />} />
+            </Routes>
+          </div>
           <Footer />
         </Suspense>
       </div>
