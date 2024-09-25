@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import LoadingProgress from "../utils/Loading";
 import { Home, ProductDetail, Store } from "../pages";
-import { Header, Footer } from "../components";
+import { Header, Footer,SearchPage } from "../components";
 
 export const MainRoutes = () => {
   return (
@@ -16,6 +16,7 @@ export const MainRoutes = () => {
               <Route path="*" element={<Home />} />
               <Route path="/store" element={<Store />} />
               <Route path="/detail" element={<ProductDetail />} />
+              <Route path="/SerchPage"element={<SearchPage/>}/>
             </Routes>
           </div>
           <Footer />
