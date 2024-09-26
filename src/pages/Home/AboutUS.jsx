@@ -2,8 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faTiktok, faTelegram } from '@fortawesome/free-brands-svg-icons';
 import FooterImage from "../../assets/bella/file.png"; 
 import Footer from "../../assets/bella/cleanser.png"; 
-import './About.css'; 
-
+import './About.css';
+/* AboutUS  */
 export const AboutUs = () => {
   return (
     <div className="flex flex-col min-h-screen bg-[#f8f9fa] text-[#333] font-playfair">
